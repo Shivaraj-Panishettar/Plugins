@@ -1,20 +1,51 @@
-# RGB to Point Cloud Data (PCD) Generation Plugin
+# 🌈 RGB to Point Cloud Data (PCD) Generation Plugin (In Development) 🚧
 
-This plugin enables the generation of **Point Cloud Data (PCD)** from an **RGB image** by estimating the depth information at multiple resolutions. 
+Welcome to the **RGB to Point Cloud Data (PCD) Generation Plugin**! 🎉 This project is currently in progress and aims to convert standard **RGB images** into high-quality **3D Point Cloud Data (PCD)** by estimating depth information at multiple resolutions.
 
-## Features
+🚀 The ultimate goal is to produce accurate and detailed 3D representations for various applications like 3D reconstruction, autonomous vehicles, and augmented reality!
 
-- **Depth Estimation**: Generates three different depths from the input RGB image: low, mid, and high resolution.
-- **Depth Merging**: Merges the depth images into a single, higher-quality depth image.
-- **PCD Generation**: Uses the merged depth image to create point cloud data (PCD) for 3D representation.
+---
 
-## Workflow
+## 🔥 Features (Work In Progress)
 
-1. **Input**: Start with an RGB image.
+- 🌐 **Depth Estimation**: Generates depth maps from the input RGB image at three different resolutions:
+  - **Low Resolution** for fast processing ⏱️
+  - **Mid Resolution** for balanced quality ⚖️
+  - **High Resolution** for the best depth detail 🔍
+  
+- 🛠️ **Depth Merging**: Combines the low, mid, and high-resolution depth maps into a single, more accurate depth image, improving depth accuracy.
+
+- 📡 **PCD Generation**: Once we have the merged depth image, we generate a **Point Cloud Data (PCD)** file, which you can visualize or use for further 3D processing.
+
+---
+
+## 🛠️ Development Progress
+
+I am currently working on optimizing the accuracy of the depth maps and merging them into a single high-quality depth image. Here's what I'm focusing on:
+
+- 🔄 **Experimenting with Different Depth Estimation Techniques**: Exploring different approaches to improve the quality of depth at each resolution.
+- ⚙️ **Fine-Tuning Resolution Levels**: Finding the sweet spot between depth quality and performance for each resolution.
+- 🧩 **Improving the Merging Algorithm**: Ensuring that the combined depth image is more accurate and realistic, reducing errors in the final PCD.
+
+---
+
+## 📋 Planned Workflow
+
+1. **Input**: RGB image (e.g., from a camera or an image file).
 2. **Depth Estimation**: 
-   - The plugin computes depth maps at three different resolutions (low, mid, high).
-   - Each resolution captures distinct depth information from the image.
-3. **Merging Depths**:
-   - The three depth maps are merged into a single depth image, combining the advantages of each resolution.
+   - Calculate three separate depth maps for low, mid, and high resolution.
+3. **Depth Merging**:
+   - Merge the three depth maps into one high-quality depth image.
 4. **PCD Generation**:
-   - Using the merged depth image, the plugin generates point cloud data (PCD), representing the 3D structure of the scene.
+   - Generate a **Point Cloud Data (PCD)** file from the merged depth image, creating a 3D structure of the scene.
+
+---
+
+## 🚀 How to Use (Coming Soon) ⏳
+
+Once development is complete, you’ll be able to:
+
+1. Clone the repository and navigate into the project directory:
+   ```bash
+   git clone <repository-url>
+   cd <repository-directory>
