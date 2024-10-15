@@ -1,1 +1,20 @@
+# RGB to Point Cloud Data (PCD) Generation Plugin
 
+This plugin enables the generation of **Point Cloud Data (PCD)** from an **RGB image** by estimating the depth information at multiple resolutions. 
+
+## Features
+
+- **Depth Estimation**: Generates three different depths from the input RGB image: low, mid, and high resolution.
+- **Depth Merging**: Merges the depth images into a single, higher-quality depth image.
+- **PCD Generation**: Uses the merged depth image to create point cloud data (PCD) for 3D representation.
+
+## Workflow
+
+1. **Input**: Start with an RGB image.
+2. **Depth Estimation**: 
+   - The plugin computes depth maps at three different resolutions (low, mid, high).
+   - Each resolution captures distinct depth information from the image.
+3. **Merging Depths**:
+   - The three depth maps are merged into a single depth image, combining the advantages of each resolution.
+4. **PCD Generation**:
+   - Using the merged depth image, the plugin generates point cloud data (PCD), representing the 3D structure of the scene.
