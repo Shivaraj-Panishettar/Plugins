@@ -1,1 +1,20 @@
+# BIN to PCD Converter Plugin
+
+## Overview
+
+The BIN to PCD Converter Plugin is a simple tool designed to convert binary (.bin) files into Point Cloud Data (.pcd) files. This plugin is useful for users working with 3D data in various applications, enabling easy integration and analysis of point cloud data.
+
+## Features
+
+- **Easy Conversion**: Convert BIN files to PCD format with a single command.
+- **Fast Processing**: Efficiently handles large datasets.
+- **Cross-Platform**: Works on Windows, macOS, and Linux.
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/yourusername/bin-to-pcd-converter.git
+   cd bin-to-pcd-converter
 
